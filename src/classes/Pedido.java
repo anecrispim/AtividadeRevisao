@@ -5,6 +5,7 @@ public class Pedido {
 	private String descricao;
 	private String data;
 	private Produto produtos;
+	private Cliente cliente;
 	
 	public int getIdPedido() {
 		return idPedido;
@@ -24,6 +25,16 @@ public class Pedido {
 	public void setData(String data) {
 		this.data = data;
 	}
-	
-	
+	public Produto getProdutos() {
+		return produtos;
+	}
+	public void setProdutos(Produto produtos) {
+		this.produtos = produtos;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
 }
